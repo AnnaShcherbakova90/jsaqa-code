@@ -2,15 +2,18 @@ const jestConfig = require("./jest.config");
 
 let page;
 
+beforeEach(async () => {
+  page = await browser.newPage();
+});
+
+afterEach(() => {
+  page.close();
+});
+
 describe("Github page tests1", () => {
 
   beforeEach(async () => {
-    page = await browser.newPage();
     await page.goto("https://github.com/team");
-  });
-  
-  afterEach(() => {
-    page.close();
   });
 
   test("The h1 header content'", async () => {
@@ -37,14 +40,6 @@ describe("Github page tests1", () => {
 });
 
 describe("Github page tests2", () => {
-
-  beforeEach(async () => {
-    page = await browser.newPage();
-  });
-  
-  afterEach(() => {
-    page.close();
-  });
   
   test("The h1 header content", async () => {
     await page.goto("https://github.com/marketplace");
