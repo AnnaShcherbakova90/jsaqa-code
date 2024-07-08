@@ -25,4 +25,11 @@ module.exports = {
       throw new Error(`Not possible to type text for selector: ${selector}`);
     }
   },
+  waitForPageLoaded: async function (page) {
+    try {
+      await page.waitForNavigation();
+    } catch {
+      throw new Error(`Can not load the page: ${page.url()}`);
+    }
+  },
 };
