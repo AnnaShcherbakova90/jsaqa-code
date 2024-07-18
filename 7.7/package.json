@@ -1,7 +1,6 @@
 {
   "name": "jsaqa-live-7",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.0.0"
-  }
+    "cypress": "^13.13.1"
+  },
+  "keywords": [],
+  "description": ""
 }
