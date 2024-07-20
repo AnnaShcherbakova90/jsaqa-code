@@ -9,7 +9,5 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.13.1"
-  },
-  "keywords": [],
-  "description": ""
+  }
 }

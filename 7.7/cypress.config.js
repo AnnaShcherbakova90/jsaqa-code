@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    projectId: "aatgj3",
+    projectId: "z7454f",
 
     baseUrl: "https://petstore.swagger.io/v2/",
 
